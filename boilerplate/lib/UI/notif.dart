@@ -140,7 +140,7 @@ class CustomHeading extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.fromLTRB(15, 0, 0, 15),
+            padding: title=='Deposit Addition' ? EdgeInsets.fromLTRB(0, 0, 0, 15):EdgeInsets.fromLTRB(15, 0, 0, 15),
             child: Row(
               children: <Widget>[
                 Text(
@@ -157,7 +157,7 @@ class CustomHeading extends StatelessWidget {
           ),
           Positioned(
             bottom: 0,
-            left: 15,
+            left: title=='Deposit Addition' ? 0 : 15,
             width: 30,
             height: 4,
             child: Container(
